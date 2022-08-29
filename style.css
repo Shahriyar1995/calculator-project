@@ -1,7 +1,6 @@
 body {
     background-color: #000000;
     direction       : ltr;
-    height          : 100vh;
     padding         : 0;
     margin          : 0;
     font-size       : 30px;
@@ -10,8 +9,12 @@ body {
 }
 
 .calc {
-    width : 400px;
-    margin: auto;
+    width         : 400px;
+    margin        : 50px auto;
+    display       : flex;
+    flex-direction: column;
+    flex-wrap     : nowrap;
+    align-items   : flex-end;
 }
 
 .display {
@@ -19,6 +22,8 @@ body {
     text-align: right;
     font-size : 60px;
     padding   : 20px;
+    width     : 345px;
+    overflow-x: hidden;
 }
 
 .key {
